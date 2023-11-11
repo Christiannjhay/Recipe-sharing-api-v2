@@ -13,7 +13,7 @@ This repository contains the implementation of a Recipe Sharing Platform API usi
 
 2. **Build and Run Docker Containers:**
     ```bash
-    docker-compose up --build
+    docker-compose up 
     ```
 
 3. **Access the API:**
