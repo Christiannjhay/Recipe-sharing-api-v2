@@ -27,4 +27,4 @@ This repository contains the implementation of a Recipe Sharing Platform API usi
 - **POST /recipes/{recipe_id}/ratings/:** Rate a specific recipe.
 - **POST /recipes/{recipe_id}/comments/:** Comment on a specific recipe.
 - **GET /recipes/{recipe_id}/comments/:** Retrieve all comments for a specific recipe.
-Adjust the URLs and request bodies based on your specific test cases and the response data returned by the server.
+  **Adjust the URLs and request bodies based on your specific test cases and the response data returned by the server.
