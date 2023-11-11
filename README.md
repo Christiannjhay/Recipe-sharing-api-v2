@@ -7,7 +7,7 @@ This repository contains the implementation of a Recipe Sharing Platform API usi
 
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/yourusername/recipe-sharing-api.git
+    https://github.com/Christiannjhay/Recipe-sharing-api-v2.git
     cd recipe-sharing-api
     ```
 
