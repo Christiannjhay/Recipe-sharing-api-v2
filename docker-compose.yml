@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: YourStrong@Passw0rd
+      ACCEPT_EULA: Y
+    ports:
+      - "14500:1433"
+    networks:
+      - final_default  # Use the name of the network you want to connect both services to
+
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - sqlserver
+    networks:
+      - final_default  # Use the same network name as for the sqlserver service
+
+networks:
+  final_default:
+    external: true
