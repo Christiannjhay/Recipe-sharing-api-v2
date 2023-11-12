@@ -14,6 +14,7 @@ port = 14500
 conn = pyodbc.connect(f'DRIVER=ODBC Driver 17 for SQL Server; SERVER={server};DATABASE={database};UID={username};PWD={password};PORT={port}', autocommit=True)
 cursor = conn.cursor()
 
+
 # Use the logging module to add a log statement
 try:
     print("Successfully connected to the database.")
