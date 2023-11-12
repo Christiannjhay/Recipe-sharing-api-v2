@@ -19,7 +19,7 @@ This repository contains the implementation of a Recipe Sharing Platform API usi
 3. **Access the API:**
     Open your browser and navigate to [http://localhost:5000](http://localhost:5000)
 ## API Endpoints
- >Adjust the URLs and request bodies based on your specific test cases and the response data returned by the server.**
+ >Adjust the URLs and request bodies based on your specific test cases and the response data returned by the server.
 - **POST /recipes/:** Add a new recipe.
 - **GET /recipes/:** Retrieve a list of all recipes, sorted by most recent.
 - **GET /recipes/{recipe_id}/:** Retrieve details of a specific recipe by its ID.
