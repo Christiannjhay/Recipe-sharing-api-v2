@@ -51,6 +51,8 @@ try:
 except pyodbc.Error as e:
     print("Error creating 'Ratings' table: %s" % str(e))
 
+
+# API endpoint to add recipes and get recipes
 @app.route("/recipes", methods=['POST', 'GET'])
 def recipes():
     if request.method == 'POST':
@@ -85,6 +87,7 @@ def recipes():
 
         return jsonify(recipe_list)
 
+# API endpoint to update or delete the recipe
 @app.route("/recipes/<int:recipe_id>", methods=['GET', 'PUT', 'DELETE'])
 def recipe(recipe_id):
     if request.method == 'GET':
@@ -122,7 +125,7 @@ def recipe(recipe_id):
 
         return jsonify({"message": "Recipe deleted successfully!"})
 
-
+# API endpoint to add ratings to the recipe
 @app.route("/recipes/<int:recipe_id>/ratings", methods=['POST'])
 def add_rating(recipe_id):
     if request.method == 'POST':
@@ -136,7 +139,7 @@ def add_rating(recipe_id):
 
         return jsonify({"message": "Rating added successfully!"})
 
-
+# API endpoint to add and retrieve comments for the recipe
 @app.route("/recipes/<int:recipe_id>/comments", methods=['POST', 'GET'])
 def recipe_comments(recipe_id):
     if request.method == 'POST':
